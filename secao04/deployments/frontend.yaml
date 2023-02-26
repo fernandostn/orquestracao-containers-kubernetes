@@ -19,4 +19,6 @@ spec:
   selector:
     matchLabels:
       type: frontend
-  replicas: 3
+  strategy:
+    type: RollingUpdate
+  replicas: 6
